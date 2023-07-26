@@ -36,7 +36,7 @@ def get_weather():
   if city is None:
     print('请设置城市')
     return None
-  url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
+  url = "https://apis.tianapi.com/tianqi/index?key=d6d4ec65313f2e26efd011a0b8315ec7&city=汉中&type=1" + city
   res = requests.get(url).json()
   if res is None:
     return None
